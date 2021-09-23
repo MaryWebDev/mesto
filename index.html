@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <title>Mesto Russia</title>
+</head>
+<body class="page">
+  <header class="header">
+    <div class="header__logo"></div>
+  </header>
+  <main class="main">
+    <section class="profile">
+      <img src="./images/ava.jpg" alt="аватар" class="profile__avatar">
+      <div class="profile__info">
+        <div class="profile__heading">
+          <h1 class="profile__name">Harry Potter</h1>
+          <button class="profile__edit-button"></button>
+        </div>
+        <div class="edit-popup">
+          <div id="edit-popup" class="edit-popup__content">
+            <div class="edit-popup__close"></div>
+            <h2 class="edit-popup__header">Редактировать профиль</h2>
+            <form class="edit-popup__form">
+              <input type="text" class="edit-popup__name">
+              <input type="text" class="edit-popup__about">
+              <button type="button" class="edit-popup__submit-btn">Сохранить</button>
+            </form>
+          </div>
+        </div>
+        <p class="profile__about">I'm a student at Hogwarts School</p>
+      </div>
+      <button class="profile__add-button"></button>
+    </section>
+    <section class="elements">
+      <div class="elements__item">
+        <img src="./images/1.jpg" alt="Хогвартс" class="elements__img">
+        <div class="elements__description">
+          <p class="elements__caption">Hogwarts</p>
+          <form>
+            <label class="elements__like-label">
+              <input type="checkbox" class="elements__invisible-checkbox">
+              <span class="elements__visible-checkbox"></span>
+            </label>
+          </form>
+        </div>
+      </div>
+      <div class="elements__item">
+        <img src="./images/2.jpg" alt="Письмо из Хогвартса" class="elements__img">
+        <div class="elements__description">
+          <p class="elements__caption">Acceptance letter</p>
+          <form>
+            <label class="elements__like-label">
+              <input type="checkbox" class="elements__invisible-checkbox">
+              <span class="elements__visible-checkbox"></span>
+            </label>
+          </form>
+        </div>
+      </div>
+      <div class="elements__item">
+        <img src="./images/4.jpg" alt="Поезд в Хогвартс" class="elements__img">
+        <div class="elements__description">
+          <p class="elements__caption">Hogwarts Express</p>
+          <form>
+            <label class="elements__like-label">
+              <input type="checkbox" class="elements__invisible-checkbox">
+              <span class="elements__visible-checkbox"></span>
+            </label>
+          </form>
+        </div>
+      </div>
+      <div class="elements__item">
+        <img src="./images/5.jpg" alt="Хогсмид" class="elements__img">
+        <div class="elements__description">
+          <p class="elements__caption">Hogsmeade Village</p>
+          <form>
+            <label class="elements__like-label">
+              <input type="checkbox" class="elements__invisible-checkbox">
+              <span class="elements__visible-checkbox"></span>
+            </label>
+          </form>
+        </div>
+      </div>
+      <div class="elements__item">
+        <img src="./images/6.jpg" alt="Платформа 9¾" class="elements__img">
+        <div class="elements__description">
+          <p class="elements__caption">Platform 9¾</p>
+          <form>
+            <label class="elements__like-label">
+              <input type="checkbox" class="elements__invisible-checkbox">
+              <span class="elements__visible-checkbox"></span>
+            </label>
+          </form>
+        </div>
+      </div>
+      <div class="elements__item">
+        <img src="./images/3.jpg" alt="Букля" class="elements__img">
+        <div class="elements__description">
+          <p class="elements__caption">Hedwig</p>
+          <form>
+            <label class="elements__like-label">
+              <input type="checkbox" class="elements__invisible-checkbox">
+              <span class="elements__visible-checkbox"></span>
+            </label>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="footer__copyright">&copy; 2021 Mesto Russia</p>
+  </footer>
+  <script src="./scripts/main.js"></script>
+</body>
+</html>

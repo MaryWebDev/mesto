@@ -1,0 +1,10 @@
+.elements__description {
+  height: calc(100% - 282px);
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0 0 10px 10px;
+  gap: 10px;
+}

@@ -1,0 +1,20 @@
+.edit-popup__name {
+  margin-top: 54px;
+  padding-bottom: 13px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #00000033;
+  font-size: 14px;
+  line-height: 1.2;
+  color: black;
+}
+
+.edit-popup__name:focus {
+  outline-color: #00000000;
+}
+
+@media screen and (max-width: 560px) {
+  .edit-popup__name {
+    margin-top: 75px;
+  }
+}

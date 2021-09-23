@@ -1,0 +1,15 @@
+.edit-popup__header {
+  padding-top: 34px;
+  margin: 0;
+  font-family: inherit;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 560px) {
+  .edit-popup__header {
+    padding-top: 25px;
+    font-size: 18px;
+  }
+}

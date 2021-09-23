@@ -1,0 +1,29 @@
+.edit-popup__content {
+  position: relative;
+  margin: 195px auto;
+  width: 430px;
+  height: 330px;
+  background-color: white;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  color: black;
+  text-align: center;
+  animation: popup-open .8s;
+}
+
+@media screen and (max-width: 560px) {
+  .edit-popup__content {
+    margin-top: 123px;
+    width: 282px;
+    height: 322px;
+  }
+}
+
+@keyframes popup-open {
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1
+  }
+}

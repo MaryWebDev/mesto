@@ -1,0 +1,13 @@
+.edit-popup__about {
+  margin-top: 30px;
+  padding-bottom: 13px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #00000033;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.edit-popup__about:focus {
+  outline-color: #00000000;
+}
