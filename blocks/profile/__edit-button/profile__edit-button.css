@@ -7,11 +7,11 @@
   padding: 0;
   background-color: inherit;
   background-image: url('../../../images/edit-button.svg');
+  transition: opacity .3s ease-in-out;
 }
 
 .profile__edit-button:hover {
   opacity: .6;
-  transition: opacity .3s ease-in-out;
 }
 
 @media screen and (max-width: 700px) {

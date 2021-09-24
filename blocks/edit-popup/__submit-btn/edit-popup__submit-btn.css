@@ -9,11 +9,11 @@
   font-family: inherit;
   font-size: 18px;
   line-height: 1.22;
+  transition: opacity .3s ease-in-out;
 }
 
 .edit-popup__submit-btn:hover {
   opacity: .6;
-  transition: opacity .3s ease-in-out;
   cursor: pointer;
 }
 

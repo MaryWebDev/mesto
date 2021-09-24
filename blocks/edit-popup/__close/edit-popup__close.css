@@ -7,11 +7,11 @@
   top: -40px;
   right: -40px;
   background-image: url('../../../images/close-icon.svg');
+  transition: opacity .3s ease-in-out;
 }
 
 .edit-popup__close:hover {
   opacity: .6;
-  transition: opacity .3s ease-in-out;
   cursor: pointer;
 }
 

@@ -3,26 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="b401cd54-a334-49bf-afbe-0b79ee56cdae" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/edit-popup/__about/edit-popup__about.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/blocks/edit-popup/__close/edit-popup__close.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/edit-popup/__close/edit-popup__close.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/edit-popup/__content/edit-popup__content.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/edit-popup/__content/edit-popup__content.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/edit-popup/__header/edit-popup__header.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/edit-popup/__header/edit-popup__header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/edit-popup/__name/edit-popup__name.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/blocks/edit-popup/__submit-btn/edit-popup__submit-btn.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/edit-popup/__submit-btn/edit-popup__submit-btn.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/elements/__caption/elements__caption.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/elements/__caption/elements__caption.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/elements/__description/elements__description.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/elements/__description/elements__description.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/elements/__invisible-checkbox/elements__invisible-checkbox.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/elements/__item/elements__item.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/elements/__item/elements__item.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/elements/__like-label/elements__like-label.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/elements/__visible-checkbox/elements__visible-checkbox.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/footer/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/footer/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/elements/__like-btn/elements__like-btn.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/elements/__like-btn/elements__like-btn.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blocks/header/__logo/header__logo.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/header/__logo/header__logo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/header/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/page/page.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/page/page.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blocks/profile/__add-button/profile__add-button.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/profile/__add-button/profile__add-button.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blocks/profile/__edit-button/profile__edit-button.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/profile/__edit-button/profile__edit-button.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,6 +104,7 @@
       <workItem from="1632464146015" duration="1794000" />
       <workItem from="1632465953202" duration="1795000" />
       <workItem from="1632467797709" duration="1026000" />
+      <workItem from="1632507851644" duration="1246000" />
     </task>
     <servers />
   </component>
