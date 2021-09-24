@@ -13,6 +13,7 @@
 
 .edit-popup__submit-btn:hover {
   opacity: .6;
+  transition: opacity .3s ease-in-out;
   cursor: pointer;
 }
 

@@ -1,4 +1,4 @@
-.edit-popup__about {
+.edit-popup__field {
   margin-top: 30px;
   padding-bottom: 13px;
   width: 100%;
@@ -6,8 +6,9 @@
   border-bottom: 1px solid #00000033;
   font-size: 14px;
   line-height: 1.2;
+  color: black;
 }
 
-.edit-popup__about:focus {
+.edit-popup__field:focus {
   outline-color: #00000000;
 }

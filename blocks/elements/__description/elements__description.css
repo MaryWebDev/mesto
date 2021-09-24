@@ -1,10 +1,9 @@
 .elements__description {
-  height: calc(100% - 282px);
+  min-height: calc(100% - 282px);
   background-color: white;
   color: black;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   border-radius: 0 0 10px 10px;
-  gap: 10px;
 }

@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./pages/index.css">
   <title>Mesto Russia</title>
 </head>
 <body class="page">
   <header class="header">
-    <div class="header__logo"></div>
+    <a href="#" class="header__logo"></a>
   </header>
   <main class="main">
     <section class="profile">
@@ -17,94 +17,53 @@
       <div class="profile__info">
         <div class="profile__heading">
           <h1 class="profile__name">Harry Potter</h1>
-          <button class="profile__edit-button"></button>
-        </div>
-        <div class="edit-popup">
-          <div id="edit-popup" class="edit-popup__content">
-            <div class="edit-popup__close"></div>
-            <h2 class="edit-popup__header">Редактировать профиль</h2>
-            <form class="edit-popup__form">
-              <input type="text" class="edit-popup__name">
-              <input type="text" class="edit-popup__about">
-              <button type="button" class="edit-popup__submit-btn">Сохранить</button>
-            </form>
-          </div>
+          <button type="button" aria-label="редактировать" class="profile__edit-button"></button>
         </div>
         <p class="profile__about">I'm a student at Hogwarts School</p>
       </div>
-      <button class="profile__add-button"></button>
+      <button type="button" class="profile__add-button"></button>
     </section>
     <section class="elements">
       <div class="elements__item">
         <img src="./images/1.jpg" alt="Хогвартс" class="elements__img">
         <div class="elements__description">
-          <p class="elements__caption">Hogwarts</p>
-          <form>
-            <label class="elements__like-label">
-              <input type="checkbox" class="elements__invisible-checkbox">
-              <span class="elements__visible-checkbox"></span>
-            </label>
-          </form>
+          <h2 class="elements__caption" lang="en">Hogwarts</h2>
+          <button type="button" aria-label="лайкнуть карточку" class="elements__like-btn"></button>
         </div>
       </div>
       <div class="elements__item">
         <img src="./images/2.jpg" alt="Письмо из Хогвартса" class="elements__img">
         <div class="elements__description">
-          <p class="elements__caption">Acceptance letter</p>
-          <form>
-            <label class="elements__like-label">
-              <input type="checkbox" class="elements__invisible-checkbox">
-              <span class="elements__visible-checkbox"></span>
-            </label>
-          </form>
+          <h2 class="elements__caption" lang="en">Acceptance letter</h2>
+          <button type="button" aria-label="лайкнуть карточку" class="elements__like-btn"></button>
         </div>
       </div>
       <div class="elements__item">
         <img src="./images/4.jpg" alt="Поезд в Хогвартс" class="elements__img">
         <div class="elements__description">
-          <p class="elements__caption">Hogwarts Express</p>
-          <form>
-            <label class="elements__like-label">
-              <input type="checkbox" class="elements__invisible-checkbox">
-              <span class="elements__visible-checkbox"></span>
-            </label>
-          </form>
+          <h2 class="elements__caption" lang="en">Hogwarts Express</h2>
+          <button type="button" aria-label="лайкнуть карточку" class="elements__like-btn"></button>
         </div>
       </div>
       <div class="elements__item">
         <img src="./images/5.jpg" alt="Хогсмид" class="elements__img">
         <div class="elements__description">
-          <p class="elements__caption">Hogsmeade Village</p>
-          <form>
-            <label class="elements__like-label">
-              <input type="checkbox" class="elements__invisible-checkbox">
-              <span class="elements__visible-checkbox"></span>
-            </label>
-          </form>
+          <h2 class="elements__caption" lang="en">Hogsmeade Village</h2>
+          <button type="button" aria-label="лайкнуть карточку" class="elements__like-btn"></button>
         </div>
       </div>
       <div class="elements__item">
         <img src="./images/6.jpg" alt="Платформа 9¾" class="elements__img">
         <div class="elements__description">
-          <p class="elements__caption">Platform 9¾</p>
-          <form>
-            <label class="elements__like-label">
-              <input type="checkbox" class="elements__invisible-checkbox">
-              <span class="elements__visible-checkbox"></span>
-            </label>
-          </form>
+          <h2 class="elements__caption" lang="en">Platform 9¾</h2>
+          <button type="button" aria-label="лайкнуть карточку" class="elements__like-btn"></button>
         </div>
       </div>
       <div class="elements__item">
         <img src="./images/3.jpg" alt="Букля" class="elements__img">
         <div class="elements__description">
-          <p class="elements__caption">Hedwig</p>
-          <form>
-            <label class="elements__like-label">
-              <input type="checkbox" class="elements__invisible-checkbox">
-              <span class="elements__visible-checkbox"></span>
-            </label>
-          </form>
+          <h2 class="elements__caption" lang="en">Hedwig</h2>
+          <button type="button" aria-label="лайкнуть карточку" class="elements__like-btn"></button>
         </div>
       </div>
     </section>
@@ -112,6 +71,17 @@
   <footer class="footer">
     <p class="footer__copyright">&copy; 2021 Mesto Russia</p>
   </footer>
+  <article class="edit-popup">
+    <div id="edit-popup" class="edit-popup__content">
+      <button type="button" class="edit-popup__close"></button>
+      <h3 class="edit-popup__header">Редактировать профиль</h3>
+      <form name="profile" class="edit-popup__form">
+        <input type="text" name="user" class="edit-popup__field edit-popup__field_content_name">
+        <input type="text" name="description" class="edit-popup__field edit-popup__field_content_about">
+        <button type="submit" class="edit-popup__submit-btn">Сохранить</button>
+      </form>
+    </div>
+  </article>
   <script src="./scripts/main.js"></script>
 </body>
 </html>

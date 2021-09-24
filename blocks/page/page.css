@@ -6,14 +6,8 @@
   font-family: 'Inter', Arial, sans-serif;
 }
 
-@media screen and (max-width: 939px) {
-  .page {
-    margin: 45px 30px 0;
-  }
-}
-
 @media screen and (max-width: 700px) {
   .page {
-    margin: 28px 19px 0;
+    margin-top: 28px;
   }
 }

@@ -1,5 +1,5 @@
 .elements__caption {
-  margin-left: 21px;
+  flex-basis: 210px;
   font-family: inherit;
   font-style: normal;
   font-weight: 900;

@@ -3,8 +3,27 @@
   <component name="ChangeListManager">
     <list default="true" id="b401cd54-a334-49bf-afbe-0b79ee56cdae" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/edit-popup/__about/edit-popup__about.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/edit-popup/__close/edit-popup__close.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/edit-popup/__close/edit-popup__close.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blocks/edit-popup/__content/edit-popup__content.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/edit-popup/__content/edit-popup__content.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/edit-popup/__header/edit-popup__header.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/edit-popup/__header/edit-popup__header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/edit-popup/__name/edit-popup__name.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/edit-popup/__submit-btn/edit-popup__submit-btn.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/edit-popup/__submit-btn/edit-popup__submit-btn.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/elements/__caption/elements__caption.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/elements/__caption/elements__caption.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/elements/__description/elements__description.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/elements/__description/elements__description.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/elements/__invisible-checkbox/elements__invisible-checkbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/elements/__item/elements__item.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/elements/__item/elements__item.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/elements/__like-label/elements__like-label.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/elements/__visible-checkbox/elements__visible-checkbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/footer/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/footer/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/header/__logo/header__logo.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/header/__logo/header__logo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/header/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/page/page.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/page/page.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blocks/profile/__add-button/profile__add-button.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/profile/__add-button/profile__add-button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/profile/__edit-button/profile__edit-button.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/profile/__edit-button/profile__edit-button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +99,23 @@
       <workItem from="1632379554334" duration="21000" />
       <workItem from="1632379628726" duration="2543000" />
       <workItem from="1632382185352" duration="1093000" />
-      <workItem from="1632383314616" duration="802000" />
+      <workItem from="1632383314616" duration="1402000" />
+      <workItem from="1632399762657" duration="1725000" />
+      <workItem from="1632401721896" duration="10452000" />
+      <workItem from="1632412207247" duration="1046000" />
+      <workItem from="1632414099298" duration="1447000" />
+      <workItem from="1632417822217" duration="1793000" />
+      <workItem from="1632419637994" duration="1666000" />
+      <workItem from="1632421866818" duration="2055000" />
+      <workItem from="1632424013541" duration="1868000" />
+      <workItem from="1632425898828" duration="1804000" />
+      <workItem from="1632427716162" duration="1796000" />
+      <workItem from="1632429524761" duration="1794000" />
+      <workItem from="1632431332524" duration="1847000" />
+      <workItem from="1632461317810" duration="1404000" />
+      <workItem from="1632464146015" duration="1794000" />
+      <workItem from="1632465953202" duration="1795000" />
+      <workItem from="1632467797709" duration="1026000" />
     </task>
     <servers />
   </component>

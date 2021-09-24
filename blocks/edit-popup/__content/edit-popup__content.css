@@ -1,21 +1,20 @@
 .edit-popup__content {
   position: relative;
-  margin: 195px auto;
+  margin: calc((100vh - 330px)/2) auto;
   width: 430px;
-  height: 330px;
+  min-height: 330px;
   background-color: white;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
   color: black;
-  text-align: center;
   animation: popup-open .8s;
 }
 
 @media screen and (max-width: 560px) {
   .edit-popup__content {
-    margin-top: 123px;
+    margin: calc((100vh - 322px)/2) auto;
     width: 282px;
-    height: 322px;
+    min-height: 322px;
   }
 }
 

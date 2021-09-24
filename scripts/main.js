@@ -4,30 +4,41 @@ let closeBtn = popup.querySelector('.edit-popup__close');
 let submitBtn = popup.querySelector('.edit-popup__submit-btn');
 let nickname = document.querySelector('.profile__name');
 let about = document.querySelector('.profile__about');
-let editName = document.querySelector('.edit-popup__name');
-let editAbout = document.querySelector('.edit-popup__about');
+let editName = document.querySelector('.edit-popup__field_content_name');
+let editAbout = document.querySelector('.edit-popup__field_content_about');
+let likeBtnList = document.querySelectorAll('.elements__like-btn');
 
-openBtn.addEventListener('click', () => {
-  popup.style.display = 'block';
-  editName.value = nickname.textContent;
-  editAbout.value = about.textContent;
-  document.addEventListener("keyup", (event) => {
-    if (event.keyCode === 13) {
-      submitBtn.click();
-    }
+[...likeBtnList].forEach(function eventListener(btn) {
+  btn.addEventListener('click', function likeToggle() {
+    btn.classList.toggle('elements__like-btn_is-liked');
   });
 });
 
-closeBtn.addEventListener('click', () => popup.style.display = 'none');
+function displayToggle() {
+  popup.classList.toggle('edit-popup_is-opened');
+}
 
-submitBtn.addEventListener('click',  () => {
+function openPopup () {
+  displayToggle();
+  editName.value = nickname.textContent;
+  editAbout.value = about.textContent;
+}
+openBtn.addEventListener('click', openPopup);
+
+closeBtn.addEventListener('click', displayToggle);
+
+const formElem = document.querySelector('.edit-popup__form');
+
+function handleFormSubmit(e) {
+  e.preventDefault();
   about.textContent = editAbout.value;
   nickname.textContent = editName.value;
-  popup.style.display = 'none';
-});
+  displayToggle();
+}
+formElem.addEventListener('submit', handleFormSubmit);
 
 window.addEventListener('click', (event) => {
   if (event.target === popup) {
-    popup.style.display = 'none';
+    displayToggle();
   }
 });
