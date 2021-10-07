@@ -3,12 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="b401cd54-a334-49bf-afbe-0b79ee56cdae" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/edit-popup/__close/edit-popup__close.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/edit-popup/__close/edit-popup__close.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/edit-popup/__submit-btn/edit-popup__submit-btn.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/edit-popup/__submit-btn/edit-popup__submit-btn.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/elements/__like-btn/elements__like-btn.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/elements/__like-btn/elements__like-btn.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/header/__logo/header__logo.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/header/__logo/header__logo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/profile/__add-button/profile__add-button.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/profile/__add-button/profile__add-button.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/profile/__edit-button/profile__edit-button.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/profile/__edit-button/profile__edit-button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/edit-popup/__close/edit-popup__close.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/edit-popup/__content/edit-popup__content.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/edit-popup/__field/edit-popup__field.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/edit-popup/__form/edit-popup__form.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/edit-popup/__header/edit-popup__header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/edit-popup/__submit-btn/edit-popup__submit-btn.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/edit-popup/_is-opened/edit-popup_is-opened.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/edit-popup/edit-popup.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/elements/__img/elements__img.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/elements/__img/elements__img.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/elements/__item/elements__item.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/elements/__item/elements__item.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/main.js" afterDir="false" />
@@ -32,7 +36,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Maria\Desktop\dev\" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -105,6 +115,31 @@
       <workItem from="1632465953202" duration="1795000" />
       <workItem from="1632467797709" duration="1026000" />
       <workItem from="1632507851644" duration="1246000" />
+      <workItem from="1633070938626" duration="808000" />
+      <workItem from="1633073291092" duration="615000" />
+      <workItem from="1633088962899" duration="1799000" />
+      <workItem from="1633168521864" duration="592000" />
+      <workItem from="1633497574184" duration="1464000" />
+      <workItem from="1633501415369" duration="1434000" />
+      <workItem from="1633503247667" duration="2992000" />
+      <workItem from="1633511443309" duration="1564000" />
+      <workItem from="1633519778173" duration="1160000" />
+      <workItem from="1633539644167" duration="1673000" />
+      <workItem from="1633542325840" duration="1794000" />
+      <workItem from="1633544132266" duration="1794000" />
+      <workItem from="1633545939125" duration="1794000" />
+      <workItem from="1633547746881" duration="1794000" />
+      <workItem from="1633549553889" duration="1831000" />
+      <workItem from="1633551398088" duration="545000" />
+      <workItem from="1633584897222" duration="1216000" />
+      <workItem from="1633590885390" duration="1793000" />
+      <workItem from="1633593286691" duration="599000" />
+      <workItem from="1633596622582" duration="1864000" />
+      <workItem from="1633598502659" duration="1692000" />
+      <workItem from="1633608181476" duration="1391000" />
+      <workItem from="1633609987209" duration="1794000" />
+      <workItem from="1633611793054" duration="2349000" />
+      <workItem from="1633614155932" duration="969000" />
     </task>
     <servers />
   </component>

@@ -1,4 +1,4 @@
-.edit-popup__header {
+.popup__header {
   padding: 34px 0 24px 36px;
   margin: 0;
   font-family: inherit;
@@ -8,7 +8,7 @@
 }
 
 @media screen and (max-width: 560px) {
-  .edit-popup__header {
+  .popup__header {
     padding: 25px 0 45px 22px;
     font-size: 18px;
   }

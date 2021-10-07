@@ -1,4 +1,4 @@
-.edit-popup__content {
+.popup__content {
   position: relative;
   margin: calc((100vh - 330px)/2) auto;
   width: 430px;
@@ -11,7 +11,7 @@
 }
 
 @media screen and (max-width: 560px) {
-  .edit-popup__content {
+  .popup__content {
     margin: calc((100vh - 322px)/2) auto;
     width: 282px;
     min-height: 322px;

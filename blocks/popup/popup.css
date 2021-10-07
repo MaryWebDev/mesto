@@ -1,5 +1,4 @@
-.edit-popup {
-  display: none;
+.popup {
   position: fixed;
   z-index: 2;
   width: 100%;
@@ -7,4 +6,7 @@
   left: 0;
   top: 0;
   background-color: rgba(0, 0, 0, .5);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility .3s ease-in-out, opacity .3s ease-in-out;
 }

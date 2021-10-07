@@ -1,4 +1,4 @@
-.edit-popup__field {
+.popup__field {
   margin-top: 30px;
   padding-bottom: 13px;
   width: 100%;
@@ -9,6 +9,6 @@
   color: black;
 }
 
-.edit-popup__field:focus {
+.popup__field:focus {
   outline-color: #00000000;
 }
