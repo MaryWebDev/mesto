@@ -3,19 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b401cd54-a334-49bf-afbe-0b79ee56cdae" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/edit-popup/__close/edit-popup__close.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/edit-popup/__content/edit-popup__content.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/edit-popup/__field/edit-popup__field.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/edit-popup/__form/edit-popup__form.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/edit-popup/__header/edit-popup__header.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/edit-popup/__submit-btn/edit-popup__submit-btn.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/edit-popup/_is-opened/edit-popup_is-opened.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/edit-popup/edit-popup.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/elements/__img/elements__img.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/elements/__img/elements__img.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/elements/__item/elements__item.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/elements/__item/elements__item.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +127,7 @@
       <workItem from="1633608181476" duration="1391000" />
       <workItem from="1633609987209" duration="1794000" />
       <workItem from="1633611793054" duration="2349000" />
-      <workItem from="1633614155932" duration="969000" />
+      <workItem from="1633614155932" duration="1658000" />
     </task>
     <servers />
   </component>
