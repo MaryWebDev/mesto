@@ -101,7 +101,7 @@ initialCards.reverse().forEach(function(item) {
 
 const photoPopup = document.querySelector('.photo-popup');
 const photoOpenBtnList = cardList.querySelectorAll('.elements__img');
-const photoCloseBtn = photoPopup.querySelector('.popup__close');
+const photoCloseBtn = photoPopup.querySelector('.photo-popup__close');
 
 photoOpenBtnList.forEach(photo => {
   photo.addEventListener('click', function(e) {
