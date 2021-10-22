@@ -20,11 +20,26 @@ const cardTemplate = document.querySelector('.elements__item_template').content;
 const photoPopup = document.querySelector('.photo-popup');
 const photoCloseBtn = photoPopup.querySelector('.popup__close');
 
-const togglePopup = popup => popup.classList.toggle('popup_is-opened');
+const togglePopup = popup => {
+  popup.classList.toggle('popup_is-opened');
+  const closePopupByEsc = function (e) {
+    if (e.key === 'Escape') {
+      popup.classList.remove('popup_is-opened');
+      window.removeEventListener('keydown', closePopupByEsc);
+    }
+  }
+  if (popup.classList.contains('popup_is-opened')) {
+    window.addEventListener('keydown', closePopupByEsc);
+  } else {
+    window.removeEventListener('keydown', closePopupByEsc);
+  }
+}
 
 const openEditPopup = () => {
   editName.value = nickname.textContent;
   editAbout.value = about.textContent;
+  editName.dispatchEvent(new Event('input'));
+  editAbout.dispatchEvent(new Event('input'));
   togglePopup(editPopup);
 }
 
@@ -42,7 +57,9 @@ const handleFormSubmit = e => {
 
 editFormElem.addEventListener('submit', handleFormSubmit);
 
-addOpenBtn.addEventListener('click', () => togglePopup(addPopup));
+addOpenBtn.addEventListener('click', () => {
+  togglePopup(addPopup);
+});
 addCloseBtn.addEventListener('click', () => togglePopup(addPopup));
 
 const addFormElem = addPopup.querySelector('.popup__form');
@@ -107,7 +124,7 @@ const initialCards = [
 initialCards.forEach(item => cardList.append(createCard(item.link, item.name)))
 
 popupList.forEach(popup => {
-  popup.addEventListener('click', (e) => {
+  popup.addEventListener('click', e => {
     if (e.target === e.currentTarget) {
       togglePopup(popup);
     }
