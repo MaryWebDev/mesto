@@ -32,11 +32,11 @@ const enableValidation = dataObj => {
     });
   };
 
-  hasInvalidInput = function (inputList) {
+  const hasInvalidInput = inputList => {
     return inputList.some(input => !input.validity.valid);
   }
 
-  toggleButtonState = function (inputList, buttonElement) {
+  const toggleButtonState = (inputList, buttonElement) => {
     if (hasInvalidInput(inputList)) {
       buttonElement.classList.add(dataObj.inactiveButtonClass);
       buttonElement.setAttribute('disabled', true);
@@ -49,7 +49,7 @@ const enableValidation = dataObj => {
   const formList = Array.from(document.querySelectorAll(dataObj.formSelector));
   formList.forEach((formElement) => {
     setEventListeners(formElement);
-    formElement.addEventListener('submit', function (evt) {
+    formElement.addEventListener('submit', evt => {
       evt.preventDefault();
     });
   });

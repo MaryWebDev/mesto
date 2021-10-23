@@ -1,12 +1,10 @@
 const popupList = document.querySelectorAll('.popup');
 const editPopup = document.querySelector('.popup_type_edit');
 const editOpenBtn = document.querySelector('.profile__edit-button');
-const editCloseBtn = editPopup.querySelector('.popup__close');
 const editSubmitBtn = editPopup.querySelector('.popup__submit-btn');
 
 const addPopup = document.querySelector('.popup_type_add');
 const addOpenBtn = document.querySelector('.profile__add-button');
-const addCloseBtn = addPopup.querySelector('.popup__close');
 const addSubmitBtn = addPopup.querySelector('.popup__submit-btn');
 
 const nickname = document.querySelector('.profile__name');
@@ -18,21 +16,21 @@ const addSource = addPopup.querySelector('.popup__field_content_about');
 const cardList = document.querySelector('.elements');
 const cardTemplate = document.querySelector('.elements__item_template').content;
 const photoPopup = document.querySelector('.photo-popup');
-const photoCloseBtn = photoPopup.querySelector('.popup__close');
 
-const togglePopup = popup => {
-  popup.classList.toggle('popup_is-opened');
-  const closePopupByEsc = function (e) {
-    if (e.key === 'Escape') {
-      popup.classList.remove('popup_is-opened');
-      window.removeEventListener('keydown', closePopupByEsc);
-    }
+const closePopupByEsc = e => {
+  if (e.key === 'Escape') {
+    closePopup(document.querySelector('.popup_is-opened'));
   }
-  if (popup.classList.contains('popup_is-opened')) {
-    window.addEventListener('keydown', closePopupByEsc);
-  } else {
-    window.removeEventListener('keydown', closePopupByEsc);
-  }
+}
+
+const openPopup = popup => {
+  popup.classList.add('popup_is-opened');
+  window.addEventListener('keydown', closePopupByEsc);
+}
+
+const closePopup = popup => {
+  popup.classList.remove('popup_is-opened');
+  window.removeEventListener('keydown', closePopupByEsc);
 }
 
 const openEditPopup = () => {
@@ -40,11 +38,10 @@ const openEditPopup = () => {
   editAbout.value = about.textContent;
   editName.dispatchEvent(new Event('input'));
   editAbout.dispatchEvent(new Event('input'));
-  togglePopup(editPopup);
+  openPopup(editPopup);
 }
 
 editOpenBtn.addEventListener('click', openEditPopup);
-editCloseBtn.addEventListener('click', () => togglePopup(editPopup));
 
 const editFormElem = editPopup.querySelector('.popup__form');
 
@@ -52,15 +49,12 @@ const handleFormSubmit = e => {
   e.preventDefault();
   about.textContent = editAbout.value;
   nickname.textContent = editName.value;
-  togglePopup(editPopup);
+  closePopup(editPopup);
 }
 
 editFormElem.addEventListener('submit', handleFormSubmit);
 
-addOpenBtn.addEventListener('click', () => {
-  togglePopup(addPopup);
-});
-addCloseBtn.addEventListener('click', () => togglePopup(addPopup));
+addOpenBtn.addEventListener('click', () => openPopup(addPopup));
 
 const addFormElem = addPopup.querySelector('.popup__form');
 
@@ -77,7 +71,7 @@ const createCard = (source, caption) => {
     photoPopup.querySelector('.photo-popup__source').src = e.target.src;
     photoPopup.querySelector('.photo-popup__source').alt = e.target.parentNode.querySelector('.elements__caption').textContent;
     photoPopup.querySelector('.photo-popup__caption').textContent = e.target.parentNode.querySelector('.elements__caption').textContent;
-    togglePopup(photoPopup);
+    openPopup(photoPopup);
   });
   return card;
 }
@@ -85,14 +79,14 @@ const createCard = (source, caption) => {
 const handleFormSubmit2 = e => {
   e.preventDefault();
   cardList.prepend(createCard(addSource.value, addCaption.value));
-  togglePopup(addPopup);
+  closePopup(addPopup);
   addSource.value = '';
   addCaption.value = '';
+  addSubmitBtn.setAttribute('disabled', true);
+  addSubmitBtn.classList.add('popup__submit-btn_disabled');
 }
 
 addFormElem.addEventListener('submit', handleFormSubmit2);
-
-photoCloseBtn.addEventListener('click', () => togglePopup(photoPopup));
 
 const initialCards = [
   {
@@ -126,7 +120,10 @@ initialCards.forEach(item => cardList.append(createCard(item.link, item.name)))
 popupList.forEach(popup => {
   popup.addEventListener('click', e => {
     if (e.target === e.currentTarget) {
-      togglePopup(popup);
+      closePopup(popup);
+    }
+    if (e.target.classList.contains('popup__close')) {
+      closePopup(popup);
     }
   }, true);
 });
