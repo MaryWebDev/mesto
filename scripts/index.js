@@ -17,6 +17,20 @@ const addSource = addPopup.querySelector('.popup__field_content_about');
 const cardList = document.querySelector('.elements');
 export const photoPopup = document.querySelector('.photo-popup');
 
+const dataObj = {
+  inputSelector: '.popup__field',
+  submitButtonSelector: '.popup__submit-btn',
+  inactiveButtonClass: 'popup__submit-btn_disabled',
+  inputErrorClass: 'popup__field_type_error',
+  errorClass: 'popup__field-error_active'
+}
+
+const editFormValidator = new FormValidator(dataObj, document.forms.profileform);
+editFormValidator.enableValidation();
+
+const addFormValidator = new FormValidator(dataObj, document.forms.cardform);
+addFormValidator.enableValidation();
+
 const closePopupByEsc = e => {
   if (e.key === 'Escape') {
     closePopup(document.querySelector('.popup_is-opened'));
@@ -54,7 +68,10 @@ const handleFormSubmit = e => {
 
 editFormElem.addEventListener('submit', handleFormSubmit);
 
-addOpenBtn.addEventListener('click', () => openPopup(addPopup));
+addOpenBtn.addEventListener('click', () => {
+  openPopup(addPopup);
+  addFormValidator.resetValidation();
+});
 
 const addFormElem = addPopup.querySelector('.popup__form');
 
@@ -96,58 +113,23 @@ popupList.forEach(popup => {
   }, true);
 });
 
-initialCards.forEach(item => {
-  const card = new Card(item.link, item.name, '.elements__item_template');
+const createCard = (source, caption) => {
+  const card = new Card(source, caption, '.elements__item_template');
   const cardElement = card.generateCard();
+  return cardElement;
+}
+
+initialCards.forEach(item => {
+  const cardElement = createCard(item.link, item.name);
   cardList.append(cardElement);
 });
 
 const handleFormSubmit2 = e => {
   e.preventDefault();
-  const card = new Card(addSource.value, addCaption.value, '.elements__item_template');
-  cardList.prepend(card.generateCard());
+  const cardElement = createCard(addSource.value, addCaption.value);
+  cardList.prepend(cardElement);
   closePopup(addPopup);
   addSource.value = '';
   addCaption.value = '';
-  addSubmitBtn.setAttribute('disabled', true);
-  addSubmitBtn.classList.add('popup__submit-btn_disabled');
 }
-
 addFormElem.addEventListener('submit', handleFormSubmit2);
-
-const formList = Array.from(document.querySelectorAll('.popup__form'));
-formList.forEach(formElement => {
-  const formValidator = new FormValidator({
-    inputSelector: '.popup__field',
-    submitButtonSelector: '.popup__submit-btn',
-    inactiveButtonClass: 'popup__submit-btn_disabled',
-    inputErrorClass: 'popup__field_type_error',
-    errorClass: 'popup__field-error_active'
-  }, formElement);
-  formValidator.enableValidation();
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

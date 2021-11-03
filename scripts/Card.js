@@ -1,4 +1,5 @@
 import {photoPopup, openPopup} from './index.js';
+
 export class Card {
   constructor(source, caption, cardSelector) {
     this._source = source;
@@ -22,7 +23,7 @@ export class Card {
   }
 
   _handleRemoveCard() {
-    this._closeBtn.parentNode.remove();
+    this._deleteBtn.parentNode.remove();
   }
 
   _handleLikeBtn() {
@@ -31,17 +32,18 @@ export class Card {
 
   _setEventListeners() {
     this._likeBtn.addEventListener('click', () => this._handleLikeBtn());
-    this._closeBtn.addEventListener('click', () => this._handleRemoveCard());
-    this._element.querySelector('.elements__img').addEventListener('click', () => this._handleOpenPopup());
+    this._deleteBtn.addEventListener('click', () => this._handleRemoveCard());
+    this._cardImg.addEventListener('click', () => this._handleOpenPopup());
   }
 
   generateCard() {
     this._element = this._getTemplate();
     this._likeBtn = this._element.querySelector('.elements__like-btn');
-    this._closeBtn = this._element.querySelector('.elements__delete-btn');
+    this._deleteBtn = this._element.querySelector('.elements__delete-btn');
+    this._cardImg = this._element.querySelector('.elements__img');
     this._setEventListeners();
-    this._element.querySelector('.elements__img').src = this._source;
-    this._element.querySelector('.elements__img').alt = this._caption;
+    this._cardImg.src = this._source;
+    this._cardImg.alt = this._caption;
     this._element.querySelector('.elements__caption').textContent = this._caption;
     return this._element;
   }
