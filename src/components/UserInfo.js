@@ -8,7 +8,7 @@ export default class UserInfo {
     return ({userName: this._profileName.textContent, userAbout: this._profileAbout.textContent});
   }
 
-  setUserInfo([editName, editAbout]) {
+  setUserInfo({editName, editAbout}) {
     this._profileName.textContent = editName;
     this._profileAbout.textContent = editAbout;
   }
