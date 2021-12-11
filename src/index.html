@@ -12,13 +12,16 @@
   </header>
   <main class="main">
     <section class="profile">
-      <img src="<%=require('./images/ava.jpg')%>" alt="аватар" class="profile__avatar">
+      <div class="profile__avatar">
+        <img alt="аватар" class="profile__avatar-img">
+        <button type="button" class="profile__avatar-overlay"></button>
+      </div>
       <div class="profile__info">
         <div class="profile__heading">
-          <h1 class="profile__name">Harry Potter</h1>
+          <h1 class="profile__name"></h1>
           <button type="button" aria-label="редактировать" class="profile__edit-button"></button>
         </div>
-        <p class="profile__about">I'm a student at Hogwarts School</p>
+        <p class="profile__about"></p>
       </div>
       <button type="button" class="profile__add-button"></button>
     </section>
@@ -46,9 +49,9 @@
       <button type="button" aria-label="закрыть окно добавления картинки" class="popup__close"></button>
       <h3 class="popup__header">Новое место</h3>
       <form name="cardform" class="popup__form" novalidate>
-        <input type="text" id="popup__img-caption" name="name" placeholder="Название" class="popup__field popup__field_content_name"  required minlength="2" maxlength="30">
+        <input type="text" id="popup__img-caption" name="name" placeholder="Название" class="popup__field popup__field_content_caption"  required minlength="2" maxlength="30">
         <span class="popup__field-error popup__img-caption-error"></span>
-        <input type="url" id="popup__url" name="link" placeholder="Ссылка" class="popup__field popup__field_content_about" required>
+        <input type="url" id="popup__url" name="link" placeholder="Ссылка" class="popup__field popup__field_content_source" required>
         <span class="popup__field-error popup__url-error"></span>
         <button type="submit" class="popup__submit-btn popup__submit-btn_disabled" disabled>Сохранить</button>
       </form>
@@ -61,13 +64,36 @@
       <button type="button" aria-label="закрыть окно картинки" class="popup__close"></button>
     </div>
   </div>
+  <div class="popup remove-popup">
+    <div class="popup__content remove-popup__content">
+      <button type="button" aria-label="закрыть окно подтверждения удаления картинки" class="popup__close"></button>
+      <h3 class="popup__header">Вы уверены?</h3>
+      <form class="popup__form">
+        <button type="submit" class="popup__submit-btn remove-popup__submit-btn">Да</button>
+      </form>
+    </div>
+  </div>
+  <article class="popup avatar-popup">
+    <div class="popup__content avatar-popup__content">
+      <button type="button" aria-label="закрыть окно добавления картинки" class="popup__close"></button>
+      <h3 class="popup__header">Обновить аватар</h3>
+      <form name="avatarform" class="popup__form" novalidate>
+        <input type="url" id="popup__avatar-url" name="link" placeholder="Ссылка" class="popup__field" required>
+        <span class="popup__field-error popup__avatar-url-error"></span>
+        <button type="submit" class="popup__submit-btn popup__submit-btn_disabled" disabled>Сохранить</button>
+      </form>
+    </div>
+  </article>
   <template class="elements__item_template">
     <div class="elements__item">
       <img src="#" alt="" class="elements__img">
       <button type="button" aria-label="удалить карточку" class="elements__delete-btn"></button>
       <div class="elements__description">
         <h2 class="elements__caption" lang="en"></h2>
-        <button type="button" aria-label="лайкнуть карточку" class="elements__like-btn"></button>
+        <div class="elements__like-space">
+          <button type="button" aria-label="лайкнуть карточку" class="elements__like-btn"></button>
+          <p class="elements__like-count">4</p>
+        </div>
       </div>
     </div>
   </template>

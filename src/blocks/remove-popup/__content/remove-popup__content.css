@@ -1,0 +1,4 @@
+.remove-popup__content {
+  margin: calc((100vh - 181px)/2) auto;
+  min-height: 181px;
+}
