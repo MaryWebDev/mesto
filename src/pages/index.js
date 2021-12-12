@@ -26,36 +26,29 @@ const api = new Api({
 });
 
 
-const profileInfoPromise = api.getProfileInfo()
-  .then(res => {
-    if (res.ok) {
-      return res.json();
-    }
-  })
-  .then(({name, about, avatar, _id}) => {
-    userInfo.setUserInfo({editName: name, editAbout: about});
-    userInfo.setUserAvatar(avatar);
-    Card.ownerId = _id;
-  })
-  .catch(res => {
-    return Promise.reject(`Ошибка: ${res.status}`);
-  });
-
-
-Promise.all([profileInfoPromise]).then(() =>
+Promise.all([
+  api.getProfileInfo()
+    .then(res => {
+      if (res.ok) {
+        return res.json();
+      }
+    }),
   api.getInitalCards()
     .then(res => {
       if (res.ok) {
         return res.json();
       }
     })
-    .then(cards => {
-      cards.forEach(res => cardSection.addItem(res));
-    })
-    .catch(res => {
-      return Promise.reject(`Ошибка: ${res.status}`);
-    })
-);
+])
+  .then(([userData, cards]) => {
+    userInfo.setUserInfo(userData);
+    Card.ownerId = userData._id;
+    cards.forEach(card => cardSection.addItem(card));
+  })
+  .catch(res => {
+    return Promise.reject(`Ошибка: ${res.status}`);
+  });
+
 
 const cardSection = new Section(
   (cardData) => {
@@ -111,15 +104,14 @@ const popupWithEditForm = new PopupWithForm('.popup_type_edit',
           return res.json();
         }
       })
-      .then(({name, about}) => {
-        userInfo.setUserInfo({editName: name, editAbout: about});
+      .then(userData => {
+        userInfo.setUserInfo(userData);
+        popupWithEditForm.close();
       })
       .catch(res => {
         return Promise.reject(`Ошибка: ${res.status}`);
       })
       .finally(() => popupWithEditForm.renderLoading(false));
-
-    popupWithEditForm.close();
   });
 popupWithEditForm.setEventListeners();
 
@@ -147,13 +139,12 @@ const popupWithAddForm = new PopupWithForm('.popup_type_add',
       })
       .then(res => {
         cardSection.addItem(res);
+        popupWithAddForm.close();
       })
       .catch(res => {
         return Promise.reject(`Ошибка: ${res.status}`);
       })
       .finally(() => popupWithAddForm.renderLoading(false));
-
-    popupWithAddForm.close();
   });
 popupWithAddForm.setEventListeners();
 
@@ -173,13 +164,12 @@ const removePopup = new PopupWithSubmit('.remove-popup',
       .then(res => {
         if (res.ok) {
           card.removeCard();
+          removePopup.close();
         }
       })
       .catch(res => {
         return Promise.reject(`Ошибка: ${res.status}`);
       })
-
-    removePopup.close();
   });
 removePopup.setEventListeners();
 
@@ -195,15 +185,14 @@ const popupWithAvatarUrl = new PopupWithForm('.avatar-popup',
           return res.json();
         }
       })
-      .then(({avatar}) => {
-        userInfo.setUserAvatar(avatar);
+      .then(userData => {
+        userInfo.setUserInfo(userData);
+        popupWithAvatarUrl.close();
       })
       .catch(res => {
         return Promise.reject(`Ошибка: ${res.status}`);
       })
       .finally(() => popupWithAddForm.renderLoading(false));
-
-    popupWithAvatarUrl.close();
   });
 popupWithAvatarUrl.setEventListeners();
 
